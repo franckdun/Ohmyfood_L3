@@ -1,0 +1,75 @@
+// block introduction
+
+@media screen and (min-width: 768px) {
+
+    .frexContainer {
+        margin: -8px;
+        background: #ececec;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 0px 20px 20px;
+    }
+
+    .block__margTop {
+        margin-top: 80px;
+    }
+
+    // Espace selection restaurants 
+    // premier container 
+
+    .resto--flexCentre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flexcolumRevrese {
+        display: flex;
+        flex-direction: column-reverse;
+        background: #ececec;
+        margin: -8px;
+    }
+
+    //accueil slogan
+
+    .marg-top {
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .texteGras {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .alignC2 {
+        text-align: center;
+    }
+
+    .ajust {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        padding: 0px 22px 0px 23px;
+    }
+
+    .block__margTop {
+        margin-top: 88px;
+    }
+
+}
+
+// .block__margTop {
+//     margin-top: 80px;
+
+//     @media screen and (max-width: 768px) {
+//         margin-top: 88px;
+//     }
+// }

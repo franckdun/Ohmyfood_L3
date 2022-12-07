@@ -1,0 +1,154 @@
+//Selection carte
+
+//sections menus
+
+//les Entrées
+.menu__type {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 50px;
+    border-bottom: 4px solid $color-vertClair;
+    color: $color-textGris;
+    line-height: 32px;
+}
+
+//animation prix
+.menu__meal {
+    position: relative;
+    padding-left: .5em;
+    background: $color-white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px -10px #000;
+    margin: 1em auto;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fadeInMenus ease-out;
+
+    &:hover {
+        .menu__price {
+            transition: right .5s ease;
+            right: 70px;
+        }
+
+        .menu__icon {
+            transition: right .5s ease;
+            right: 0;
+            transform: translateX(0);
+        }
+
+        >.menu__icon {
+            i {
+                transform: rotate(1turn);
+            }
+        }
+    }
+
+    .menu__icon {
+        i {
+            position: relative;
+            font-size: 1.4em;
+            color: $color-white;
+            transform: rotate(-1turn);
+            transition: 0.5s;
+        }
+    }
+}
+
+.menu__meal-1 {
+    padding-top: 20px;
+    position: relative;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin: 1em auto;
+    overflow: hidden;
+    cursor: pointer;
+    animation: fadeInMenus ease-out;
+}
+
+.menu__title {
+    font-size: 18px;
+}
+
+//animation texte ellipsis
+.meal--mobielSize {
+    max-width: 360px;
+    height: 75px;
+
+    &:hover {
+        .menu__titleMobile {
+            // transition: all 2s ease;
+            white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .menu__text {
+            // transition: all 2s ease;
+            white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.menu__text {
+    max-width: 303px;
+    margin: initial;
+    font-size: 16px;
+}
+
+.menu__price {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    font-size: 14px;
+    transition: right 1s ease;
+}
+
+//animation rotation
+.menu__icon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    background: $color-vertClair;
+    width: 62px;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 1.5s;
+}
+
+.menu__titleMobile {
+    margin: initial;
+    padding-top: 15px;
+    max-width: 301px;
+}
+
+.fa-check-circle {
+    &::before {
+        content: "\f058";
+        color: $color-white;
+    }
+}
+
+i {
+    .fa-solid {
+        .fa-circle-check {
+            color: $color-white;
+        }
+    }
+}
+
+.img__div--border {
+    width: 600px;
+    background: $color-gris;
+    border-radius: 40px 40px 0 0;
+    position: sticky;
+    box-shadow: 0 -19px 19px -22px #000;
+}

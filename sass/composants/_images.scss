@@ -1,0 +1,115 @@
+//Espace selection restaurants
+
+.section--bgdGray {
+    background: $color-gris;
+}
+
+.bloc {
+    margin: -8px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+//titre
+.titre--padd5 {
+    font-size: 28px;
+}
+
+//premier container
+
+.bloc_1 {
+    padding-top: 1px;
+}
+
+//article 1
+
+//illustration
+
+.bgd-brd-White {
+    background: $color-white;
+}
+
+.article--border {
+    border-radius: 20px;
+    margin: 0 20px 30px 20px;
+    box-shadow: 0 4px 15px 0 #00000096;
+}
+
+.block {
+    display: block;
+    position: relative;
+}
+
+.articleBlock--size {
+    background-size: cover;
+    background-position: center;
+    max-width: 710px;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+//tag promo
+.img__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: $color-vertFonce;
+    height: 30px;
+    background: $color-vertClair;
+    box-shadow: 0 0 15px -10px;
+    padding: 10px;
+}
+
+//legende
+.legende {
+    max-height: 200px;
+    max-width: 100%;
+    padding-bottom: 7px;
+}
+
+.RH {
+    margin: initial;
+    padding: 0 0 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .flexColumnAround {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .section--size {
+        height: 850px;
+    }
+
+    .flexColumnCentre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resto--flexCentre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .padBottom {
+        padding-bottom: 20px;
+    }
+}

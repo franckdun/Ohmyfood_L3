@@ -1,0 +1,100 @@
+// Fonctionnemement organisation 
+
+//titre
+.titre--marg20 {
+    margin: 20px;
+    font-size: 24px;
+}
+
+//filtre
+.filtre {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+//selection
+.filtreTexteIcons {
+    height: 75px;
+    border-radius: 20px;
+    margin: 12px auto 12px auto;
+    background: $color-grisClair;
+    font-weight: bold;
+    box-shadow: -18px 3px 20px -14px #000;
+    max-width: 100%;
+
+    &:hover {
+        background: $color-violetClair;
+
+        >.filtreTexte {
+            .fa-solid {
+                color: $color-violet;
+            }
+        }
+    }
+}
+
+.filtreIcons {
+    border-radius: 25px;
+    min-width: 31px;
+    height: 31px;
+    color: $color-white;
+    background-color: $color-violet;
+    font-size: 18px;
+    margin-left: -17px;
+    box-shadow: -17px 4px 19px #0006;
+}
+
+.filtreTexte {
+    width: 360px;
+    height: 50px;
+    padding: 0 66px 0 0;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreIcons_2 {
+    color: $color-grisFonce;
+    background-color: $color-grisiCones;
+    font-size: 22px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    //flexbox
+
+    .flexTitre {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flexTitre {
+        margin: -8px;
+        padding: 0px 20px 60px 20px;
+        background: $color-white;
+    }
+
+    .flexfiltre {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

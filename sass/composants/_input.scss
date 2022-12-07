@@ -1,0 +1,63 @@
+.recherche {
+    height: 55px;
+
+    &:hover {
+        background: $color-aliceblue;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 230px;
+    }
+
+    @media screen and (max-width: 768px) {
+        left: 0px;
+        background: #75757500;
+    }
+}
+
+.iconMapp {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background: $color-grisMapp;
+}
+
+.bordure_input {
+    border: none;
+    box-shadow: inset 3px 3px 6px 0 rgb(204, 219, 232);
+
+    @media screen and (max-width: 768px) {
+        background: #0000000a;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .bordureSearch {
+        width: 400px;
+        border-radius: 10px;
+        font-size: 18px;
+        // color: black; 
+        font-weight: bold;
+        border: 0.5px solid #f2f2f2;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .paddingSearch {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .wight100 {
+        min-width: 100%;
+        position: relative;
+    }
+}

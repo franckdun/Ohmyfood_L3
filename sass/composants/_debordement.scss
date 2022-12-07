@@ -1,0 +1,30 @@
+//débordement sur image
+
+//titre
+.bloc__img--margin {
+    margin-top: -49px;
+    display: flex;
+    justify-content: center;
+    height: 58px;
+}
+
+.blocTitre--padTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 25px 0px 25px;
+}
+
+.titre--font {
+    font-family: $font-family_2;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 0px;
+    display: inline-block;
+}
+
+//coeur
+
+.menu__heart-2 {
+    position: relative;
+    top: -6px;
+}
