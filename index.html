@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fontawesome 5 -->
+	<script src="https://kit.fontawesome.com/9bd058ccab.js" crossorigin="anonymous"></script>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+		rel="stylesheet">
+	<!-- css normalize -->
+	<!--	<link rel="stylesheet" href="public/css/normalize.css">-->
+	<!-- css -->
+	<link rel="stylesheet" href="sass/main.css">
+
+	<title>Ohmyfood</title>
+</head>
+
+<body>
+
+	<!-- LOADER -->
+
+	<div class="loader">
+		<p class="fontShrikhand">Loading...</p>
+		<div class="loader__wrapper">
+			<div class="loader__bar"></div>
+		</div>
+	</div>
+	<!--loader bar pageAppear -->
+	<div class="indexPage">
+
+
+		<header>
+			<!-- header bar -->
+			<div class="header--margtop-8 primary topBar">
+
+				<div class="header--alignCenter alignC">
+					<!--logo-->
+					<div class="alignC">
+						<img src="img/logo/ohmyfood@2x.svg" class="marglogo" width="50" height="40" alt="logo Revervia">
+					</div>
+
+				</div>
+			</div>
+			<!--block introduction-->
+			<div class="frexContainer block__margTop">
+
+				<div class="flexcolumRevrese">
+
+					<!--accueil slogan-->
+					<div class="marg-top">
+						<h1 class="texteGras alignC2">Réservez le menu qui vous convient</h1>
+						<p class="ajust alignC2">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+					</div>
+
+					<!-- Recherche localité INPUT -->
+					<div class="bordureSearch flexCentre">
+						<div class="wight100 location" style="width:100%">
+							<input type="text" value="&#xf3c5;&#32;&#32;Paris, Belleville"
+								style="font-family: Arial, FontAwesome; font-style: normal; width: 100%; font-size: 20px"
+								class="recherche flexCentre bordure_input paddingSearch alignC2">
+
+						</div>
+					</div>
+
+				</div>
+
+				<!-- BOUTON -->
+				<div class="flexcolumRevrese">
+					<button class="button_1">Explorer nos restaurants</button>
+				</div>
+
+			</div>
+
+
+			<!-- Fonctionnemement organisation ;  -->
+
+			<div class="flexTitre">
+
+				<!--titre-->
+				<div class="titre--marg20">
+					<h3 class="titre--padd5">Fonctionnement</h3>
+				</div>
+
+				<!--filtre-->
+				<div class="filtre margFiltre">
+
+					<!-- 1 selection -->
+					<div class="filtreTexteIcons flexBetween flexfiltre animate fadeInUp two">
+						<span class="filtreIcons flexCentre">1</span>
+						<div class="filtreTexte flexEvenly">
+							<i class="fa-solid fa-mobile-screen-button fa-lg filtreIcons_2 flexCentre"></i>
+							Choisissez un restaurant
+						</div>
+					</div>
+
+					<!-- 2 composition -->
+					<div class="filtreTexteIcons flexBetween flexfiltre animate fadeInUp three">
+						<span class="filtreIcons flexCentre">2</span>
+						<div class="filtreTexte flexEvenly">
+							<i class="fa-solid fa-list-ul fa-lg filtreIcons_2 flexCentre"></i>
+							Composez votre menu
+						</div>
+					</div>
+
+					<!-- 3 réservation table -->
+					<div class="filtreTexteIcons flexBetween flexfiltre animate fadeInUp four">
+						<span class="filtreIcons flexCentre">3</span>
+						<div class="filtreTexte flexEvenly">
+							<i class="fa-solid fa-store fa-lg filtreIcons_2 flexCentre"></i>
+							Dégustez au restaurant
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+
+
+
+		<!-- Espace selection restaurants -->
+
+
+		<section class="flexColumnAround section--size section--bgdGray bloc padBottom">
+
+			<!--titre-->
+			<div class="titre--marg20">
+				<h3 class="titre--padd5">Restaurants</h3>
+			</div>
+
+			<!--premier container-->
+			<div class="bloc_1 resto--flexCentre">
+
+				<!-- article 1 -->
+
+				<!--illustration-->
+				<article class="bgd-brd-White article--border flexColumnCentre">
+					<a class="block" href="palette.html">
+						<div class="articleBlock--size">
+							<img src="img/restaurants/palette.jpg" style="border-radius: 20px 20px 0px 0px; width: 100%"
+								alt="la palette">
+						</div>
+						<!--tag promo-->
+						<div class="img__tag">Nouveau</div>
+
+						<!--legende-->
+						<div class="legende">
+							<h4 class="RH1">La palette du goût</h4>
+							<p class="RH">Ménilmontant</p>
+
+							<!--coeur indicateur choix-->
+							<div class="blocStars RH1">
+								<div class="menu__heart">
+									<i class="far fa-heart"></i>
+									<span class="box-hidden"></span>
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</article>
+
+				<!-- article 2 -->
+
+				<!--illustration-->
+				<article class="bgd-brd-White article--border flexColumnCentre">
+					<a class="block" href="note.html">
+						<div class="articleBlock--size">
+							<!-- 
+							<img src="img/restaurants/note_cadre1.jpg"
+								style="border-radius: 20px 20px 0px 0px; height:auto; width: 100%" alt="la note"> -->
+
+
+							<img src="img/restaurants/note.jpg"
+								style="border-radius: 20px 20px 0px 0px; height:auto; width: 100%;top: -168px;position: relative;"
+								alt="la note">
+
+						</div>
+						<!--tag promo-->
+						<div class="img__tag">Nouveau</div>
+
+						<!--legende-->
+						<div class="legende">
+							<h4 class="RH1">La note enchantée</h4>
+							<p class="RH">Charonne</p>
+
+							<!--coeur indicateur choix-->
+							<div class="blocStars RH1">
+								<div class="menu__heart">
+									<i class="far fa-heart"></i>
+									<span class="box-hidden"></span>
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</article>
+
+			</div>
+
+
+			<!--deuxieme container-->
+			<div class="bloc_1 resto--flexCentre">
+
+				<!-- article 3 -->
+
+				<!--illustration-->
+				<article class="bgd-brd-White article--border flexColumnCentre">
+					<a class="block" href="francaise.html">
+						<div class="articleBlock--size">
+							<img src="img/restaurants/francaise.jpg"
+								style="border-radius: 20px 20px 0px 0px; width: 100%" alt="a la francaise">
+						</div>
+						<!--legende-->
+						<div class="legende">
+							<h4 class="RH1">A la française</h4>
+							<p class="RH">Cité Rouge</p>
+
+							<!--coeur indicateur choix-->
+							<div class="blocStars RH1">
+								<div class="menu__heart">
+									<i class="far fa-heart"></i>
+									<span class="box-hidden"></span>
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</article>
+
+				<!--article 4 -->
+
+				<!--illustration-->
+				<article class="bgd-brd-White article--border flexColumnCentre">
+					<a href="delice.html">
+						<div class="articleBlock--size">
+							<img src="img/restaurants/delice.jpg" style="border-radius: 20px 20px 0px 0px;  width: 100%"
+								alt="delice">
+						</div>
+						<!--legende-->
+						<div class="legende">
+							<h4 class="RH1">Le délice des sens</h4>
+							<p class="RH">Folie-Méricourt</p>
+
+							<!--coeur indicateur choix-->
+							<div class="blocStars RH1">
+								<div class="menu__heart">
+									<i class="far fa-heart"></i>
+									<span class="box-hidden"></span>
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</article>
+
+			</div>
+
+		</section>
+
+		<footer>
+			<div class="footer">
+
+
+				<ul class="tailleBlocfoot">
+					<li>
+						<h3 class="fontShrikhand">Ohmyfood</h3>
+					</li>
+					<li>
+						<p><a href="#"><i class="fa-solid fa-cutlery fa-lg filtreIcons_3"></i>Proposer un restaurant</a>
+						</p>
+					</li>
+					<li>
+						<p><a href="#"><i class="fa-solid fa-handshake-angle fa-lg filtreIcons_3"></i>Devenir
+								partenaire</a>
+						</p>
+					</li>
+					<li>
+						<p><a href="#">Mentions légales</a></p>
+					</li>
+					<li>
+						<p><a href="#">Contacts</a></p>
+					</li>
+				</ul>
+
+
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
