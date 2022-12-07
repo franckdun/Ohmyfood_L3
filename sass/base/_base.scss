@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+
+	&::before {
+		box-sizing: border-box;
+	}
+
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+html {
+	font-family: $font-family_1;
+	font-size: 18px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-family_1;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: $color-black;
+	display: contents;
+
+	&:hover {
+		color: $color-black;
+	}
+}
+
+.alignC {
+	text-align: center;
+}
+
+// GENERAL FLEXBOX
+
+.flexEvenly {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+//accueil slogan
+.flexCentre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//right and height text
+.RH1 {
+	font-size: 20px;
+	margin: 18px 0px 4px 15px;
+}
+
+//padding bouton menus
+.blocMobile--pad {
+	padding-bottom: 57px;
+	//padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.titre--padd5 {
+		padding: 5%;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+}
