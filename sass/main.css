@@ -752,6 +752,7 @@ i .fa-solid .fa-circle-check {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   top: 1px;
@@ -764,7 +765,6 @@ i .fa-solid .fa-circle-check {
 }
 
 .imgMobil--width {
-  width: 100%;
   margin: -8px;
   margin-top: 79px;
 }
