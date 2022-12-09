@@ -1,12 +1,22 @@
 // Fonctionnemement organisation 
 
 //titre
+
+.titre__h3 {
+    font-size: 24px;
+    letter-spacing: -0.049em;
+}
+
 .titre--marg20 {
     margin: 20px;
-    font-size: 24px;
+}
+
+.titre--marg21 {
+    margin: 21px;
 }
 
 //filtre
+
 .filtre {
     display: flex;
     flex-wrap: wrap;
@@ -39,32 +49,33 @@
             }
         }
     }
+
+    .filtreIcons {
+        border-radius: 25px;
+        min-width: 31px;
+        height: 31px;
+        color: $color-white;
+        background-color: $color-violet;
+        font-size: 18px;
+        margin-left: -17px;
+        box-shadow: -17px 4px 19px #0006;
+    }
+
+    .filtreTexte {
+        width: 360px;
+        height: 50px;
+        padding: 0 66px 0 0;
+        border-radius: 0 25px 25px 0;
+
+        .filtreIcons_2 {
+            color: $color-grisFonce;
+            background-color: $color-grisiCones;
+            font-size: 22px;
+            margin: 10px;
+        }
+    }
 }
 
-.filtreIcons {
-    border-radius: 25px;
-    min-width: 31px;
-    height: 31px;
-    color: $color-white;
-    background-color: $color-violet;
-    font-size: 18px;
-    margin-left: -17px;
-    box-shadow: -17px 4px 19px #0006;
-}
-
-.filtreTexte {
-    width: 360px;
-    height: 50px;
-    padding: 0 66px 0 0;
-    border-radius: 0 25px 25px 0;
-}
-
-.filtreIcons_2 {
-    color: $color-grisFonce;
-    background-color: $color-grisiCones;
-    font-size: 22px;
-    margin: 10px;
-}
 
 @media screen and (min-width: 768px) {
 
@@ -96,5 +107,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .titre--marg21 {
+        margin: 0;
+        font-size: 24px;
     }
 }

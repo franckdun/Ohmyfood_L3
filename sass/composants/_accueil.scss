@@ -1,10 +1,14 @@
 // block introduction
 
+.P--colorGray {
+    color: $color-pGray;
+}
+
 @media screen and (min-width: 768px) {
 
-    .frexContainer {
+    .flexContainer {
         margin: -8px;
-        background: #ececec;
+        background: $color-gris;
         display: flex;
         justify-content: space-around;
         padding: 0px 0px 20px 20px;
@@ -14,7 +18,8 @@
         margin-top: 80px;
     }
 
-    // Espace selection restaurants 
+    // Espace selection restaurants
+
     // premier container 
 
     .resto--flexCentre {
@@ -29,34 +34,38 @@
     .flexcolumRevrese {
         display: flex;
         flex-direction: column-reverse;
-        background: #ececec;
+        background: $color-gris;
         margin: -8px;
+
+        //Accueil slogan
+
+        .marg-top {
+            margin-top: 60px;
+
+            h1 {
+                // font-size: 2em;
+            }
+
+            .texteGras {
+                font-family: $font-family_1;
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0px 30px 0px 30px;
+            }
+        }
+
     }
 
-    //accueil slogan
 
-    .marg-top {
-        margin-top: 60px;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    .texteGras {
-        font-family: 'Raleway', sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0px 30px 0px 30px;
-    }
 
     .alignC2 {
         text-align: center;
     }
 
     .ajust {
-        font-family: 'Roboto', sans-serif;
-        font-size: 22px;
+        font-family: $font-family_3;
+        // font-size: 22px;
+        font-size: 18px;
         padding: 0px 22px 0px 23px;
     }
 
@@ -65,11 +74,3 @@
     }
 
 }
-
-// .block__margTop {
-//     margin-top: 80px;
-
-//     @media screen and (max-width: 768px) {
-//         margin-top: 88px;
-//     }
-// }
