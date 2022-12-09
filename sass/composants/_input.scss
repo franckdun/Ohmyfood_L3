@@ -26,7 +26,7 @@
 
 .bordure_input {
     border: none;
-    box-shadow: inset 3px 3px 6px 0 rgb(204, 219, 232);
+    @include input-shadow;
 
     @media screen and (max-width: 768px) {
         background: #0000000a;

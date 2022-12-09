@@ -19,7 +19,7 @@
     padding-left: .5em;
     background: $color-white;
     border-radius: 15px;
-    box-shadow: 0 5px 20px -10px #000;
+    @include menu-shadow;
     margin: 1em auto;
     overflow: hidden;
     cursor: pointer;
@@ -150,5 +150,5 @@ i {
     background: $color-gris;
     border-radius: 40px 40px 0 0;
     position: sticky;
-    box-shadow: 0 -19px 19px -22px #000;
+    @include cartesDeborde-shadow;
 }

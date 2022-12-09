@@ -534,7 +534,7 @@ i .fa-solid .fa-circle-check {
 }
 .button_1:hover {
   opacity: 0.9;
-  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.27);
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.27);
 }
 
 .blocBouton--marginMobile {
@@ -868,7 +868,7 @@ i .fa-solid .fa-circle-check {
   margin: -8px;
   width: 100%;
   z-index: 10;
-  box-shadow: 0px -14px 10px 10px;
+  box-shadow: 0 -14px 10px 10px;
 }
 
 .marglogo {

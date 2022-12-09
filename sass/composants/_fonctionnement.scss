@@ -37,7 +37,7 @@
     margin: 12px auto 12px auto;
     background: $color-grisClair;
     font-weight: bold;
-    box-shadow: -18px 3px 20px -14px #000;
+    @include filtre-shadow;
     max-width: 100%;
 
     &:hover {
@@ -58,7 +58,7 @@
         background-color: $color-violet;
         font-size: 18px;
         margin-left: -17px;
-        box-shadow: -17px 4px 19px #0006;
+        @include filtreNumber-shadow;
     }
 
     .filtreTexte {

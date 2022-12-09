@@ -35,7 +35,7 @@
 .article--border {
     border-radius: 20px;
     margin: 0 20px 30px 20px;
-    box-shadow: 0 4px 15px 0 #00000096;
+    @include article-shadow;
 }
 
 .block {
