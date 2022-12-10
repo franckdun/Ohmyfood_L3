@@ -1,0 +1,16 @@
+//Tags promo
+.img__tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: $color-vertFonce;
+    height: 30px;
+    background: $color-vertClair;
+    box-shadow: 0 0 15px -10px;
+    padding: 10px;
+}

@@ -12,23 +12,25 @@
 // règles de base 
 'base/base',
 
+//loader
+'composants/loader',
+
 //composants index
 'composants/accueil',
 'composants/input',
 'composants/cartes',
 'composants/fonctionnement',
-'composants/loader',
 'composants/bouton',
-'composants/menu',
 'composants/images',
+'composants/tags.scss',
 'composants/coeur',
 
-//composants menus
+//composants indexs menus
 'composants/banniere-Img',
 'composants/debordement',
+'composants/menu',
 'composants/fadeInUp',
 
 // règles de mise-en-page
-
 'mise-en-page/header',
 'mise-en-page/footer';

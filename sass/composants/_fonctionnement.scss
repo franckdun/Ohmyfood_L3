@@ -46,6 +46,9 @@
         >.filtreTexte {
             .fa-solid {
                 color: $color-violet;
+                transition: 0.1s;
+                font-size: x-large;
+
             }
         }
     }
