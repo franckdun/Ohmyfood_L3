@@ -23,11 +23,11 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
   display: contents;
 }
 a:hover {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .alignC {
@@ -140,7 +140,7 @@ a:hover {
   width: 100%;
   margin: -8px;
   background-color: #323232;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -163,7 +163,7 @@ a:hover {
 .loader__bar {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #ff79da, #fff);
+  background: linear-gradient(to bottom, #ff79da, #ffffff);
   border-radius: 15px;
   transform-origin: left;
   -webkit-animation: progression 3s;
@@ -229,7 +229,7 @@ a:hover {
   height: 55px;
 }
 .recherche:hover {
-  background: aliceblue;
+  background: #f0f8ff;
 }
 @media screen and (min-width: 768px) {
   .recherche {
@@ -301,7 +301,7 @@ a:hover {
 .menu__meal {
   position: relative;
   padding-left: 0.5em;
-  background: #fff;
+  background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 5px 20px -10px #000;
   margin: 1em auto;
@@ -325,7 +325,7 @@ a:hover {
 .menu__meal .menu__icon i {
   position: relative;
   font-size: 1.4em;
-  color: #fff;
+  color: #ffffff;
   transform: rotate(-1turn);
   transition: 0.5s;
 }
@@ -400,11 +400,11 @@ a:hover {
 
 .fa-check-circle::before {
   content: "\f058";
-  color: #fff;
+  color: #ffffff;
 }
 
 i .fa-solid .fa-circle-check {
-  color: #fff;
+  color: #ffffff;
 }
 
 .img__div--border {
@@ -465,7 +465,7 @@ i .fa-solid .fa-circle-check {
   border-radius: 25px;
   min-width: 31px;
   height: 31px;
-  color: #fff;
+  color: #ffffff;
   background-color: #9657db;
   font-size: 18px;
   margin-left: -17px;
@@ -482,6 +482,7 @@ i .fa-solid .fa-circle-check {
   background-color: rgba(150, 87, 219, 0);
   font-size: 22px;
   margin: 10px;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -501,7 +502,7 @@ i .fa-solid .fa-circle-check {
   .flexTitre {
     margin: -8px;
     padding: 0px 20px 60px 20px;
-    background: #fff;
+    background: #ffffff;
   }
   .flexfiltre {
     display: flex;
@@ -515,7 +516,7 @@ i .fa-solid .fa-circle-check {
 }
 .button_1 {
   display: block;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 50px;
   background: linear-gradient(to bottom, #ff79da, #9657db);
@@ -571,7 +572,7 @@ i .fa-solid .fa-circle-check {
 }
 
 .bgd-brd-White {
-  background: #fff;
+  background: #ffffff;
 }
 
 .article--border {
@@ -885,7 +886,7 @@ i .fa-solid .fa-circle-check {
 
 .note-m {
   background-image: url("../img/restaurants/note.jpg");
-  /* background-position: 0 -120px;*/
+  background-position: 0 -120px;
 }
 
 .bloc__img--margin {
@@ -1002,7 +1003,7 @@ i .fa-solid .fa-circle-check {
 
 @media screen and (max-width: 768px) {
   .primary {
-    background: #fff;
+    background: #ffffff;
   }
 }
 /*/ Footer /*/
@@ -1010,7 +1011,7 @@ i .fa-solid .fa-circle-check {
   padding: 10px;
   margin: -8px;
   background: #323232;
-  color: #fff;
+  color: #ffffff;
 }
 
 .tailleBlocfoot {
@@ -1022,7 +1023,7 @@ i .fa-solid .fa-circle-check {
 }
 
 .filtreIcons_3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
   margin-right: 10px;
 }
@@ -1032,5 +1033,5 @@ ul li {
 }
 
 ul li a {
-  color: #fff;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
