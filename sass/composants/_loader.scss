@@ -57,7 +57,13 @@
     justify-content: center;
     opacity: 0;
     transform: translateX(-100%);
-    animation: loading 2s;
+    animation: loading 3s;
+}
+
+.loader__titre {
+    color: black;
+    text-shadow: 0px 0px 3px white;
+    font-size: 34px;
 }
 
 .loader__wrapper {
@@ -76,9 +82,11 @@
     border-radius: 15px;
     transform-origin: left;
     animation: progression 3s;
+
 }
 
 .indexPage {
     opacity: 1;
     animation: pageAppear 2s;
+
 }
