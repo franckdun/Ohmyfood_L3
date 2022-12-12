@@ -3,10 +3,17 @@
 //titre
 .bloc__img--margin {
     margin-top: -49px;
-
     display: flex;
     justify-content: center;
     height: 58px;
+
+    .img__div--border {
+        width: 600px;
+        background: $color-gris;
+        border-radius: 40px 40px 0 0;
+        position: sticky;
+        @include cartesDeborde-shadow;
+    }
 }
 
 .blocTitre--padTop {
