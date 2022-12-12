@@ -10,15 +10,15 @@
 	   <td width="50%">    
      <h2>Compétences évaluées</h2>
 
-* [Utiliser un système de gestion de versions pour le suivi du projet et son hébergement]()
+* [Utiliser un système de gestion de versions pour le suivi du projet et son hébergement](https://franckdun.github.io/Ohmyfood_L3/index.html)
 	
-* [Mettre en place son environnement Front-End]()
+* [Mettre en place son environnement Front-End](https://franckdun.github.io/Ohmyfood_L3/index.html)
 
-* [Assurer la cohérence graphique d'un site web]()
+* [Assurer la cohérence graphique d'un site web](https://franckdun.github.io/Ohmyfood_L3/index.html)
 
-* [Mettre en place une structure de navigation pour un site web]()
+* [Mettre en place une structure de navigation pour un site web](https://franckdun.github.io/Ohmyfood_L3/index.html)
 
-* [Mettre en œuvre des effets CSS graphiques avancés]()
+* [Mettre en œuvre des effets CSS graphiques avancés](https://franckdun.github.io/Ohmyfood_L3/index.html)
 	   </td>  
 	     <td width="50%">
 
