@@ -668,12 +668,10 @@ a:hover {
 .bloc_1 {
   padding-top: 1px;
 }
-
-.bgd-brd-White {
+.bloc_1 .bgd-brd-White {
   background: #ffffff;
 }
-
-.article--border {
+.bloc_1 .article--border {
   border-radius: 20px;
   margin: 0 20px 30px 20px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5882352941);
@@ -683,8 +681,7 @@ a:hover {
   display: block;
   position: relative;
 }
-
-.articleBlock--size {
+.block .articleBlock--size {
   background-size: cover;
   background-position: center;
   max-width: 710px;
@@ -692,18 +689,106 @@ a:hover {
   border-radius: 15px 15px 0 0;
   overflow: hidden;
 }
-
-.legende {
+.block .palette {
+  background-image: url("../img/restaurants/palette.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .block .palette {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .block .palette {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .block .palette {
+    width: 450px;
+  }
+}
+.block .delice {
+  background-image: url("../img/restaurants/delice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .block .delice {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .block .delice {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .block .delice {
+    width: 450px;
+  }
+}
+.block .francaise {
+  background-image: url("../img/restaurants/francaise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .block .francaise {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .block .francaise {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .block .francaise {
+    width: 450px;
+  }
+}
+.block .note {
+  background-image: url("../img/restaurants/note.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+  /* background-position: 0 -120px;*/
+}
+@media screen and (min-width: 768px) {
+  .block .note {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .block .note {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .block .note {
+    width: 450px;
+  }
+}
+.block .legende {
   max-height: 200px;
   max-width: 100%;
   padding-bottom: 7px;
 }
-
-.RH {
+.block .legende .RH {
   margin: initial;
   padding: 0 0 0 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .padBottom {
+    padding-bottom: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .flexColumnAround {
     display: flex;
@@ -713,111 +798,17 @@ a:hover {
   .section--size {
     height: 850px;
   }
-  .flexColumnCentre {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .resto--flexCentre {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
-@media screen and (max-width: 768px) {
-  .padBottom {
-    padding-bottom: 20px;
+  .flexColumnCentre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
-.palette {
-  background-image: url("../img/restaurants/palette.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .palette {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .palette {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .palette {
-    width: 450px;
-  }
-}
-
-.delice {
-  background-image: url("../img/restaurants/delice.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .delice {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .delice {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .delice {
-    width: 450px;
-  }
-}
-
-.francaise {
-  background-image: url("../img/restaurants/francaise.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .francaise {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .francaise {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .francaise {
-    width: 450px;
-  }
-}
-
-.note {
-  background-image: url("../img/restaurants/note.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-  /* background-position: 0 -120px;*/
-}
-@media screen and (min-width: 768px) {
-  .note {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .note {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .note {
-    width: 450px;
-  }
-}
-
 .img__tag {
   display: flex;
   justify-content: center;
