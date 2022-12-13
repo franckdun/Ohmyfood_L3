@@ -212,7 +212,7 @@
   z-index: 5;
   overflow: hidden;
   transition: 0.5s;
-  margin: 3px;
+  padding: 3px;
 }
 .far.fa-heart:hover {
   color: transparent;
@@ -296,7 +296,7 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
-  margin: 3px;
+  padding: 3px;
 }
 
 * {

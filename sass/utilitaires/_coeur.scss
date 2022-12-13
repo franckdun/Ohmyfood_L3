@@ -33,7 +33,7 @@ $color_1: transparent;
     z-index: 5;
     overflow: hidden;
     transition: 0.5s;
-    margin: 3px;
+    padding: 3px;
 
 
     &:hover {
@@ -123,5 +123,5 @@ $color_1: transparent;
     background-clip: border-box;
     -webkit-background-clip: text;
     color: $color_1;
-    margin: 3px;
+    padding: 3px;
 }
