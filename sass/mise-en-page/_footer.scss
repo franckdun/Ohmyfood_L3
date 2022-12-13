@@ -5,20 +5,22 @@
     margin: -8px;
     background: $color-grisMarron;
     color: $color-white;
+
+    .tailleBlocfoot {
+        margin: 0px 0px 50px 0px;
+
+        //p
+        .filtreIcons_3 {
+            color: $color-white;
+            font-size: 22px;
+            margin-right: 10px;
+        }
+    }
 }
 
-.tailleBlocfoot {
-    margin: 0px 0px 50px 0px;
-}
-
+// h3
 .fontShrikhand {
     font-family: $font-family_2;
-}
-
-.filtreIcons_3 {
-    color: $color-white;
-    font-size: 22px;
-    margin-right: 10px;
 }
 
 ul {
@@ -27,12 +29,13 @@ ul {
     }
 }
 
-ul {
-    li {
-        a {
-            color: $color-white;
-        }
+.footer a {
+    text-decoration: none;
+    color: $color-white;
+    display: contents;
+
+    &:hover {
+        color: $color-black;
+        text-shadow: 0px 1px 6px white;
     }
 }
-
-//-----------------------

@@ -1013,25 +1013,29 @@ a:hover {
   background: #323232;
   color: #ffffff;
 }
-
-.tailleBlocfoot {
+.footer .tailleBlocfoot {
   margin: 0px 0px 50px 0px;
+}
+.footer .tailleBlocfoot .filtreIcons_3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-right: 10px;
 }
 
 .fontShrikhand {
   font-family: "Shrikhand", "sans-serif";
 }
 
-.filtreIcons_3 {
-  color: #ffffff;
-  font-size: 22px;
-  margin-right: 10px;
-}
-
 ul li {
   list-style-type: none;
 }
 
-ul li a {
+.footer a {
+  text-decoration: none;
   color: #ffffff;
+  display: contents;
+}
+.footer a:hover {
+  color: #000000;
+  text-shadow: 0px 1px 6px white;
 }/*# sourceMappingURL=main.css.map */
