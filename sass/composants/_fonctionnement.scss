@@ -61,7 +61,7 @@
         background-color: $color-violet;
         font-size: 18px;
         margin-left: -17px;
-        @include filtreNumber-shadow;
+        //@include filtreNumber-shadow;
     }
 
     .filtreTexte {
