@@ -14,7 +14,8 @@
     padding: 19px 32px 22px 32px;
 
     @media screen and (min-width: 768px) {
-        margin: 7em 65px 0em auto;
+        margin: 7em 56px 0em auto;
+        min-width: max-content;
     }
 
     @media screen and (max-width: 768px) {

@@ -405,115 +405,6 @@ a:hover {
     margin-top: 88px;
   }
 }
-.menu__meal-1 {
-  padding-top: 20px;
-  position: relative;
-  padding-left: 10px;
-  border-radius: 15px;
-  margin: 1em auto;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-animation: fadeInMenus ease-out;
-          animation: fadeInMenus ease-out;
-}
-.menu__meal-1 .menu__type {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  width: 50px;
-  border-bottom: 4px solid #99e2d0;
-  color: #4c4545;
-  line-height: 32px;
-}
-
-.menu__meal {
-  position: relative;
-  padding-left: 0.5em;
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px -10px #000;
-  margin: 1em auto;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-animation: fadeInMenus ease-out;
-          animation: fadeInMenus ease-out;
-}
-.menu__meal:hover .menu__price {
-  transition: right 0.5s ease;
-  right: 70px;
-}
-.menu__meal:hover .menu__icon {
-  transition: right 0.5s ease;
-  right: 0;
-  transform: translateX(0);
-}
-.menu__meal:hover > .menu__icon i {
-  transform: rotate(1turn);
-}
-.menu__meal .menu__title {
-  font-size: 18px;
-}
-.menu__meal .menu__titleMobile {
-  margin: initial;
-  padding-top: 15px;
-  max-width: 301px;
-}
-.menu__meal .menu__text {
-  max-width: 303px;
-  margin: initial;
-  font-size: 16px;
-}
-.menu__meal .menu__price {
-  position: absolute;
-  right: 20px;
-  bottom: 8px;
-  font-size: 14px;
-  transition: right 1s ease;
-}
-.menu__meal .menu__icon i {
-  position: relative;
-  font-size: 1.4em;
-  color: #ffffff;
-  transform: rotate(-1turn);
-  transition: 0.5s;
-}
-
-.meal--mobielSize {
-  max-width: 360px;
-  height: 75px;
-}
-.meal--mobielSize:hover .menu__titleMobile {
-  white-space: nowrap;
-  width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.meal--mobielSize:hover .menu__text {
-  white-space: nowrap;
-  width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.menu__icon {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: -60px;
-  top: 0;
-  background: #99e2d0;
-  width: 62px;
-  height: 100%;
-  transform: translateX(100%);
-  transition: 1.5s;
-}
-.menu__icon i .fa-solid .fa-check-circle::before {
-  content: "\f058";
-  color: #ffffff;
-}
-
 .titre__h3 {
   font-size: 24px;
   letter-spacing: -0.049em;
@@ -626,7 +517,10 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
   .button_1 {
-    margin: 7em 65px 0em auto;
+    margin: 7em 56px 0em auto;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
   }
 }
 @media screen and (max-width: 768px) {
@@ -899,6 +793,115 @@ a:hover {
 .menu__heart-2 {
   position: relative;
   top: -6px;
+}
+
+.menu__meal-1 {
+  padding-top: 20px;
+  position: relative;
+  padding-left: 10px;
+  border-radius: 15px;
+  margin: 1em auto;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: fadeInMenus ease-out;
+          animation: fadeInMenus ease-out;
+}
+.menu__meal-1 .menu__type {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 50px;
+  border-bottom: 4px solid #99e2d0;
+  color: #4c4545;
+  line-height: 32px;
+}
+
+.menu__meal {
+  position: relative;
+  padding-left: 0.5em;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px -10px #000;
+  margin: 1em auto;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: fadeInMenus ease-out;
+          animation: fadeInMenus ease-out;
+}
+.menu__meal:hover .menu__price {
+  transition: right 0.5s ease;
+  right: 70px;
+}
+.menu__meal:hover .menu__icon {
+  transition: right 0.5s ease;
+  right: 0;
+  transform: translateX(0);
+}
+.menu__meal:hover > .menu__icon i {
+  transform: rotate(1turn);
+}
+.menu__meal .menu__title {
+  font-size: 18px;
+}
+.menu__meal .menu__titleMobile {
+  margin: initial;
+  padding-top: 15px;
+  max-width: 301px;
+}
+.menu__meal .menu__text {
+  max-width: 303px;
+  margin: initial;
+  font-size: 16px;
+}
+.menu__meal .menu__price {
+  position: absolute;
+  right: 20px;
+  bottom: 8px;
+  font-size: 14px;
+  transition: right 1s ease;
+}
+.menu__meal .menu__icon i {
+  position: relative;
+  font-size: 1.4em;
+  color: #ffffff;
+  transform: rotate(-1turn);
+  transition: 0.5s;
+}
+
+.meal--mobielSize {
+  max-width: 360px;
+  height: 75px;
+}
+.meal--mobielSize:hover .menu__titleMobile {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meal--mobielSize:hover .menu__text {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__icon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -60px;
+  top: 0;
+  background: #99e2d0;
+  width: 62px;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 1.5s;
+}
+.menu__icon i .fa-solid .fa-check-circle::before {
+  content: "\f058";
+  color: #ffffff;
 }
 
 .animate {
