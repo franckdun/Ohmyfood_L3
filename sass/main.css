@@ -116,8 +116,8 @@
 
 .indexPage {
   opacity: 1;
-  -webkit-animation: pageAppear 2s;
-          animation: pageAppear 2s;
+  -webkit-animation: pageAppear 3s;
+          animation: pageAppear 3s;
 }
 
 .recherche {
