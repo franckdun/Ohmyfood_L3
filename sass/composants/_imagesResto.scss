@@ -1,7 +1,98 @@
 //Espace selection restaurants
+
+
+
+
+
+
+
+//h3
+.titre--padd5 {
+    font-size: 28px;
+}
+
+
+//section
 .section--bgdGray {
     background: $color-gris;
+
+    //titre
+    .titre--marg20 {
+        margin: 20px;
+    }
+
+    //blocs 1 et 2
+
+    .bloc_1 {
+        padding-top: 1px;
+
+        //articles
+
+        .bgd-brd-White {
+            background: $color-white;
+        }
+
+        .article--border {
+            border-radius: 20px;
+            margin: 0 20px 30px 20px;
+            @include article-shadow;
+
+            //a
+            .block {
+                display: block;
+                position: relative;
+
+                //illustration
+
+                .articleBlock--size {
+                    background-size: cover;
+                    background-position: center;
+                    max-width: 710px;
+                    height: 220px;
+                    border-radius: 15px 15px 0 0;
+                    overflow: hidden;
+                }
+
+                .palette {
+                    @include bgd-img($img-palette);
+                }
+
+                .delice {
+                    @include bgd-img($img-delice);
+                }
+
+                .francaise {
+                    @include bgd-img($img-francaise);
+                }
+
+                .note {
+                    @include bgd-img($img-note);
+                    /* background-position: 0 -120px;*/
+
+                }
+
+                //composant Tags promo
+
+                //legende
+                .legende {
+                    max-height: 200px;
+                    max-width: 100%;
+                    padding-bottom: 7px;
+
+                    //p
+                    .RH {
+                        margin: initial;
+                        padding: 0 0 0 15px;
+                    }
+                }
+            }
+
+        }
+    }
+
 }
+
+//responsive Espace selection restaurants
 
 .bloc {
     margin: -8px;
@@ -11,87 +102,6 @@
         padding-right: 20px;
     }
 }
-
-//titre
-.titre--marg20 {
-    margin: 20px;
-}
-
-//h3
-.titre--padd5 {
-    font-size: 28px;
-}
-
-//les blocs
-
-.bloc_1 {
-    padding-top: 1px;
-
-    //article 1
-
-    .bgd-brd-White {
-        background: $color-white;
-    }
-
-    .article--border {
-        border-radius: 20px;
-        margin: 0 20px 30px 20px;
-        @include article-shadow;
-    }
-}
-
-//a
-.block {
-    display: block;
-    position: relative;
-
-    //illustration
-
-    .articleBlock--size {
-        background-size: cover;
-        background-position: center;
-        max-width: 710px;
-        height: 220px;
-        border-radius: 15px 15px 0 0;
-        overflow: hidden;
-    }
-
-    .palette {
-        @include bgd-img($img-palette);
-    }
-
-    .delice {
-        @include bgd-img($img-delice);
-    }
-
-    .francaise {
-        @include bgd-img($img-francaise);
-    }
-
-    .note {
-        @include bgd-img($img-note);
-        /* background-position: 0 -120px;*/
-
-    }
-
-    //composant Tags promo
-
-    //legende
-    .legende {
-        max-height: 200px;
-        max-width: 100%;
-        padding-bottom: 7px;
-
-        //p
-        .RH {
-            margin: initial;
-            padding: 0 0 0 15px;
-        }
-    }
-}
-
-
-//responsive Espace selection restaurants
 
 @media screen and (max-width: 768px) {
     .padBottom {
@@ -116,12 +126,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    //articles
-    .flexColumnCentre {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        //articles
+        .flexColumnCentre {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

@@ -64,8 +64,11 @@ a {
 	//padding-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-	.titre--padd5 {
+//h3
+.titre--padd5 {
+	font-size: 28px;
+
+	@media screen and (max-width: 768px) {
 		padding: 1%;
 		font-weight: bold;
 		padding-top: 50px;

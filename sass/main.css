@@ -355,6 +355,9 @@ a:hover {
   padding-bottom: 57px;
 }
 
+.titre--padd5 {
+  font-size: 28px;
+}
 @media screen and (max-width: 768px) {
   .titre--padd5 {
     padding: 1%;
@@ -362,6 +365,7 @@ a:hover {
     padding-top: 50px;
   }
 }
+
 .P--colorGray {
   color: #555555;
 }
@@ -539,8 +543,132 @@ a:hover {
   margin: auto;
 }
 
+.titre--padd5 {
+  font-size: 28px;
+}
+
 .section--bgdGray {
   background: #ececec;
+}
+.section--bgdGray .titre--marg20 {
+  margin: 20px;
+}
+.section--bgdGray .bloc_1 {
+  padding-top: 1px;
+}
+.section--bgdGray .bloc_1 .bgd-brd-White {
+  background: #ffffff;
+}
+.section--bgdGray .bloc_1 .article--border {
+  border-radius: 20px;
+  margin: 0 20px 30px 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5882352941);
+}
+.section--bgdGray .bloc_1 .article--border .block {
+  display: block;
+  position: relative;
+}
+.section--bgdGray .bloc_1 .article--border .block .articleBlock--size {
+  background-size: cover;
+  background-position: center;
+  max-width: 710px;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+.section--bgdGray .bloc_1 .article--border .block .palette {
+  background-image: url("../img/restaurants/palette.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .section--bgdGray .bloc_1 .article--border .block .palette {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .section--bgdGray .bloc_1 .article--border .block .palette {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .section--bgdGray .bloc_1 .article--border .block .palette {
+    width: 450px;
+  }
+}
+.section--bgdGray .bloc_1 .article--border .block .delice {
+  background-image: url("../img/restaurants/delice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .section--bgdGray .bloc_1 .article--border .block .delice {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .section--bgdGray .bloc_1 .article--border .block .delice {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .section--bgdGray .bloc_1 .article--border .block .delice {
+    width: 450px;
+  }
+}
+.section--bgdGray .bloc_1 .article--border .block .francaise {
+  background-image: url("../img/restaurants/francaise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+}
+@media screen and (min-width: 768px) {
+  .section--bgdGray .bloc_1 .article--border .block .francaise {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .section--bgdGray .bloc_1 .article--border .block .francaise {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .section--bgdGray .bloc_1 .article--border .block .francaise {
+    width: 450px;
+  }
+}
+.section--bgdGray .bloc_1 .article--border .block .note {
+  background-image: url("../img/restaurants/note.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: inherit;
+  /* background-position: 0 -120px;*/
+}
+@media screen and (min-width: 768px) {
+  .section--bgdGray .bloc_1 .article--border .block .note {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 868px) {
+  .section--bgdGray .bloc_1 .article--border .block .note {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .section--bgdGray .bloc_1 .article--border .block .note {
+    width: 450px;
+  }
+}
+.section--bgdGray .bloc_1 .article--border .block .legende {
+  max-height: 200px;
+  max-width: 100%;
+  padding-bottom: 7px;
+}
+.section--bgdGray .bloc_1 .article--border .block .legende .RH {
+  margin: initial;
+  padding: 0 0 0 15px;
 }
 
 .bloc {
@@ -551,133 +679,6 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-.titre--marg20 {
-  margin: 20px;
-}
-
-.titre--padd5 {
-  font-size: 28px;
-}
-
-.bloc_1 {
-  padding-top: 1px;
-}
-.bloc_1 .bgd-brd-White {
-  background: #ffffff;
-}
-.bloc_1 .article--border {
-  border-radius: 20px;
-  margin: 0 20px 30px 20px;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5882352941);
-}
-
-.block {
-  display: block;
-  position: relative;
-}
-.block .articleBlock--size {
-  background-size: cover;
-  background-position: center;
-  max-width: 710px;
-  height: 220px;
-  border-radius: 15px 15px 0 0;
-  overflow: hidden;
-}
-.block .palette {
-  background-image: url("../img/restaurants/palette.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .block .palette {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .block .palette {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .block .palette {
-    width: 450px;
-  }
-}
-.block .delice {
-  background-image: url("../img/restaurants/delice.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .block .delice {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .block .delice {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .block .delice {
-    width: 450px;
-  }
-}
-.block .francaise {
-  background-image: url("../img/restaurants/francaise.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-}
-@media screen and (min-width: 768px) {
-  .block .francaise {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .block .francaise {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .block .francaise {
-    width: 450px;
-  }
-}
-.block .note {
-  background-image: url("../img/restaurants/note.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: inherit;
-  /* background-position: 0 -120px;*/
-}
-@media screen and (min-width: 768px) {
-  .block .note {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 868px) {
-  .block .note {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .block .note {
-    width: 450px;
-  }
-}
-.block .legende {
-  max-height: 200px;
-  max-width: 100%;
-  padding-bottom: 7px;
-}
-.block .legende .RH {
-  margin: initial;
-  padding: 0 0 0 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -699,7 +700,7 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .flexColumnCentre {
+  .resto--flexCentre .flexColumnCentre {
     flex-direction: column;
     justify-content: center;
     align-items: center;
