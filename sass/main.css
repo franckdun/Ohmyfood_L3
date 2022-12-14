@@ -517,6 +517,10 @@ a:hover {
   font-size: 20px;
   padding: 19px 32px 22px 32px;
 }
+.button_1:hover {
+  opacity: 0.9;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.27);
+}
 @media screen and (min-width: 768px) {
   .button_1 {
     margin: 7em 56px 0em auto;
@@ -529,10 +533,6 @@ a:hover {
   .button_1 {
     margin: 2em auto 4em auto;
   }
-}
-.button_1:hover {
-  opacity: 0.9;
-  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.27);
 }
 
 .blocBouton--marginMobile {

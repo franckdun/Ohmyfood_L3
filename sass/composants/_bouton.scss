@@ -13,6 +13,11 @@
     font-size: 20px;
     padding: 19px 32px 22px 32px;
 
+    &:hover {
+        opacity: 0.9;
+        @include btnHover-shadow;
+    }
+
     @media screen and (min-width: 768px) {
         margin: 7em 56px 0em auto;
         min-width: max-content;
@@ -23,14 +28,10 @@
 
     }
 
-    &:hover {
-        opacity: 0.9;
-        @include btnHover-shadow;
-    }
+
 }
 
 // ajust menu BOUTON
-
 
 .blocBouton--marginMobile {
     margin-top: 50px;
