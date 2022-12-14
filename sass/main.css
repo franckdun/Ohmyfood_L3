@@ -411,35 +411,57 @@ a:hover {
     margin-top: 88px;
   }
 }
-.titre__h3 {
-  font-size: 24px;
-  letter-spacing: -0.049em;
+@media screen and (max-width: 768px) {
+  .flexTitre {
+    margin: -8px;
+    padding: 0px 20px 60px 20px;
+    background: #ffffff;
+  }
+  .flexTitre .flexfiltre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-
-.titre--marg20 {
-  margin: 20px;
+@media screen and (min-width: 768px) {
+  .flexTitre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .flexTitre .flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-
-.titre--marg21 {
+.flexTitre .titre--marg21 {
   margin: 21px;
 }
-
-.filtre {
+@media screen and (max-width: 768px) {
+  .flexTitre .titre--marg21 {
+    margin: 0;
+  }
+}
+.flexTitre .titre--marg21 .titre__h3 {
+  letter-spacing: -0.049em;
+}
+.flexTitre .filtre {
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  .filtre {
+  .flexTitre .filtre {
     justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 768px) {
-  .filtre {
+  .flexTitre .filtre {
     justify-content: center;
   }
 }
-
-.filtreTexteIcons {
+.flexTitre .filtre .filtreTexteIcons {
   height: 75px;
   border-radius: 20px;
   margin: 12px auto 12px auto;
@@ -448,15 +470,15 @@ a:hover {
   box-shadow: -18px 3px 20px -14px #000;
   max-width: 100%;
 }
-.filtreTexteIcons:hover {
+.flexTitre .filtre .filtreTexteIcons:hover {
   background: #f2eafb;
 }
-.filtreTexteIcons:hover > .filtreTexte .fa-solid {
+.flexTitre .filtre .filtreTexteIcons:hover > .filtreTexte .fa-solid {
   color: #9657db;
   transition: 0.1s;
   font-size: x-large;
 }
-.filtreTexteIcons .filtreIcons {
+.flexTitre .filtre .filtreTexteIcons .filtreIcons {
   border-radius: 25px;
   min-width: 31px;
   height: 31px;
@@ -465,13 +487,13 @@ a:hover {
   font-size: 18px;
   margin-left: -17px;
 }
-.filtreTexteIcons .filtreTexte {
+.flexTitre .filtre .filtreTexteIcons .filtreTexte {
   width: 360px;
   height: 50px;
   padding: 0 66px 0 0;
   border-radius: 0 25px 25px 0;
 }
-.filtreTexteIcons .filtreTexte .filtreIcons_2 {
+.flexTitre .filtre .filtreTexteIcons .filtreTexte .filtreIcons_2 {
   color: #9b9797;
   background-color: rgba(150, 87, 219, 0);
   font-size: 22px;
@@ -479,35 +501,6 @@ a:hover {
   transition: 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  .flexTitre {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .flexTitre {
-    margin: -8px;
-    padding: 0px 20px 60px 20px;
-    background: #ffffff;
-  }
-  .flexfiltre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .titre--marg21 {
-    margin: 0;
-    font-size: 24px;
-  }
-}
 .button_1 {
   display: block;
   color: #ffffff;
@@ -558,6 +551,10 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.titre--marg20 {
+  margin: 20px;
 }
 
 .titre--padd5 {

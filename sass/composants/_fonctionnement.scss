@@ -1,120 +1,107 @@
 // Fonctionnemement organisation 
 
-//titre
+.flexTitre {
+    @media screen and (max-width: 768px) {
+        margin: -8px;
+        padding: 0px 20px 60px 20px;
+        background: $color-white;
 
-.titre__h3 {
-    font-size: 24px;
-    letter-spacing: -0.049em;
-}
-
-.titre--marg20 {
-    margin: 20px;
-}
-
-.titre--marg21 {
-    margin: 21px;
-}
-
-//filtre
-
-.filtre {
-    display: flex;
-    flex-wrap: wrap;
+        .flexfiltre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 
     @media screen and (min-width: 768px) {
-        justify-content: space-evenly;
-    }
-
-    @media screen and (max-width: 768px) {
-        justify-content: center;
-    }
-}
-
-//selection
-.filtreTexteIcons {
-    height: 75px;
-    border-radius: 20px;
-    margin: 12px auto 12px auto;
-    background: $color-grisClair;
-    font-weight: bold;
-    @include filtre-shadow;
-    max-width: 100%;
-
-    &:hover {
-        background: $color-violetClair;
-
-        >.filtreTexte {
-            .fa-solid {
-                color: $color-violet;
-                transition: 0.1s;
-                font-size: x-large;
-
-            }
-        }
-    }
-
-    .filtreIcons {
-        border-radius: 25px;
-        min-width: 31px;
-        height: 31px;
-        color: $color-white;
-        background-color: $color-violet;
-        font-size: 18px;
-        margin-left: -17px;
-        //@include filtreNumber-shadow;
-    }
-
-    .filtreTexte {
-        width: 360px;
-        height: 50px;
-        padding: 0 66px 0 0;
-        border-radius: 0 25px 25px 0;
-
-        .filtreIcons_2 {
-            color: $color-grisFonce;
-            background-color: $color-grisiCones;
-            font-size: 22px;
-            margin: 10px;
-            transition: .5s;
-        }
-    }
-}
-
-
-@media screen and (min-width: 768px) {
-
-    //flexbox
-
-    .flexTitre {
         display: flex;
         justify-content: space-around;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        .flexBetween {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
-    .flexBetween {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .flexTitre {
-        margin: -8px;
-        padding: 0px 20px 60px 20px;
-        background: $color-white;
-    }
-
-    .flexfiltre {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+    //titre h3
     .titre--marg21 {
-        margin: 0;
-        font-size: 24px;
+        margin: 21px;
+
+        @media screen and (max-width: 768px) {
+            margin: 0;
+        }
+
+        .titre__h3 {
+            letter-spacing: -0.049em;
+        }
+    }
+
+    //filtre
+    .filtre {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 768px) {
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+
+        //selection
+        .filtreTexteIcons {
+            height: 75px;
+            border-radius: 20px;
+            margin: 12px auto 12px auto;
+            background: $color-grisClair;
+            font-weight: bold;
+            @include filtre-shadow;
+            max-width: 100%;
+
+            &:hover {
+                background: $color-violetClair;
+
+                >.filtreTexte {
+                    .fa-solid {
+                        color: $color-violet;
+                        transition: 0.1s;
+                        font-size: x-large;
+
+                    }
+                }
+            }
+
+            .filtreIcons {
+                border-radius: 25px;
+                min-width: 31px;
+                height: 31px;
+                color: $color-white;
+                background-color: $color-violet;
+                font-size: 18px;
+                margin-left: -17px;
+                //@include filtreNumber-shadow;
+            }
+
+            .filtreTexte {
+                width: 360px;
+                height: 50px;
+                padding: 0 66px 0 0;
+                border-radius: 0 25px 25px 0;
+
+                .filtreIcons_2 {
+                    color: $color-grisFonce;
+                    background-color: $color-grisiCones;
+                    font-size: 22px;
+                    margin: 10px;
+                    transition: .5s;
+                }
+            }
+
+        }
+
     }
 }
