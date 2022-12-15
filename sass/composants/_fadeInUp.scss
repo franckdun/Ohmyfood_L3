@@ -44,6 +44,7 @@
 
 // ==== FADE IN UP ===
 
+//compatibilité
 @-webkit-keyframes fadeInUp {
     from {
         opacity: 0;
@@ -73,6 +74,7 @@
 }
 
 .fadeInUp {
+    //compatibilité
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
