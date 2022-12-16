@@ -174,22 +174,28 @@
     position: relative;
   }
 }
-.blocStars {
+.blocHeart {
   min-width: 150px;
 }
-
-.menu__heart {
+.blocHeart .menu__heart {
   position: relative;
   top: -19px;
   right: 27px;
   margin: 3px;
 }
-.menu__heart .box-hidden {
-  background: #fff;
+.blocHeart .menu__heart .far.fas {
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
-
-.fa-heart::before {
+.blocHeart .menu__heart .fa-heart::before {
   content: "\f004";
+}
+.blocHeart .menu__heart .box-hidden {
+  background: #ffffff;
 }
 
 .far.fa-heart {
@@ -213,56 +219,6 @@
   visibility: hidden;
   background: transparent;
   transition: 0.6s;
-}
-
-.fab {
-  font-weight: 400;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.far {
-  font-weight: 400;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fa {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fad {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fal {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fas {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
 }
 
 .box-hidden {
