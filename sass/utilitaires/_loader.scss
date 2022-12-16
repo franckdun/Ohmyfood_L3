@@ -1,92 +1,102 @@
+.indexPage {
+    opacity: 1;
+    animation: pageAppear 3s;
+}
+
+$primary: blue;
+$secondary: magenta;
+$space-lg: 1.5rem;
+$radius-circle: 50%;
+
+// On load timer
+$loading: 3s;
+
 @keyframes loading {
-    0% {
-        transform: translateX(0);
+
+    0%,
+    99% {
+        z-index: 12;
         opacity: 1;
     }
 
     100% {
-        transform: translateX(0);
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+@keyframes loading-logo {
+    from {
+        opacity: 0.75;
+    }
+
+    to {
         opacity: 1;
     }
 }
 
-@keyframes pageAppear {
+@keyframes rotation {
     0% {
-        opacity: 0;
+        transform: rotate(0deg);
     }
 
     100% {
-        opacity: 0;
+        transform: rotate(360deg);
     }
 }
 
-@keyframes progression {
-    0% {
-        transform: scaleX(0);
-    }
-
-    40% {
-        transform: scaleX(0.3);
-    }
-
-    60% {
-        transform: scaleX(0.8);
-    }
-
-    80% {
-        transform: scaleX(0.9);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.loader {
+.loading-screen {
+    animation: loading $loading both;
     position: fixed;
-    top: 0;
-    z-index: 20;
+    top: 0px;
+    z-index: 10;
     height: 110vh;
     width: 100%;
     margin: -8px;
     background-color: $color-grisMarron;
-    color: $color-white;
     display: flex;
-    flex-flow: column;
+    // flex-flow: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transform: translateX(-100%);
-    animation: loading 3s;
+    // animation: loading 3s;
 
-    &__titre {
-        color: black;
-        text-shadow: 0px 0px 3px white;
-        font-size: 34px;
-    }
 
-    &__wrapper {
-        width: 250px;
-        height: 10px;
-        margin: 20px;
-        padding: 2px;
-        border: solid 1px $color-violet;
-        border-radius: 15px;
 
-        .loader__bar {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, $color-rose, $color-white);
-            border-radius: 15px;
-            transform-origin: left;
-            animation: progression 3s;
+    &__title {
+        font-family: $font-family_2;
+        padding: $space-lg;
+        position: relative;
+        background: linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        font-size: 3.5rem;
+        z-index: 20;
+        animation: loading $loading both, loading-logo 1s ease-in-out both infinite alternate;
 
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5rem;
+            left: calc(50% - 2.5rem);
+            background: linear-gradient($primary, $secondary);
+            height: 5rem;
+            width: 5rem;
+            border-radius: $radius-circle;
+            animation: rotation 200ms linear infinite;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -4.5rem;
+            left: calc(50% - 2rem);
+            background-color: $color-grisMarron;
+            height: 4rem;
+            width: 4rem;
+            border-radius: $radius-circle;
         }
     }
-
-}
-
-.indexPage {
-    opacity: 1;
-    animation: pageAppear 3s;
 }

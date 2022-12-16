@@ -1,120 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 /*images Variables */
-@-webkit-keyframes loading {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes loading {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes pageAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes pageAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes progression {
-  0% {
-    transform: scaleX(0);
-  }
-  40% {
-    transform: scaleX(0.3);
-  }
-  60% {
-    transform: scaleX(0.8);
-  }
-  80% {
-    transform: scaleX(0.9);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes progression {
-  0% {
-    transform: scaleX(0);
-  }
-  40% {
-    transform: scaleX(0.3);
-  }
-  60% {
-    transform: scaleX(0.8);
-  }
-  80% {
-    transform: scaleX(0.9);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-.loader {
-  position: fixed;
-  top: 0;
-  z-index: 20;
-  height: 110vh;
-  width: 100%;
-  margin: -8px;
-  background-color: #323232;
-  color: #ffffff;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: translateX(-100%);
-  -webkit-animation: loading 3s;
-          animation: loading 3s;
-}
-.loader__titre {
-  color: black;
-  text-shadow: 0px 0px 3px white;
-  font-size: 34px;
-}
-.loader__wrapper {
-  width: 250px;
-  height: 10px;
-  margin: 20px;
-  padding: 2px;
-  border: solid 1px #9657db;
-  border-radius: 15px;
-}
-.loader__wrapper .loader__bar {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #ff79da, #ffffff);
-  border-radius: 15px;
-  transform-origin: left;
-  -webkit-animation: progression 3s;
-          animation: progression 3s;
-}
-
 .indexPage {
   opacity: 1;
   -webkit-animation: pageAppear 3s;
           animation: pageAppear 3s;
+}
+
+@-webkit-keyframes loading {
+  0%, 99% {
+    z-index: 12;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0%, 99% {
+    z-index: 12;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loading-logo {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loading-logo {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-screen {
+  -webkit-animation: loading 3s both;
+          animation: loading 3s both;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  height: 110vh;
+  width: 100%;
+  margin: -8px;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.loading-screen__title {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 1.5rem;
+  position: relative;
+  background: linear-gradient(blue, magenta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  font-size: 3.5rem;
+  z-index: 20;
+  -webkit-animation: loading 3s both, loading-logo 1s ease-in-out both infinite alternate;
+          animation: loading 3s both, loading-logo 1s ease-in-out both infinite alternate;
+}
+.loading-screen__title::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: calc(50% - 2.5rem);
+  background: linear-gradient(blue, magenta);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  -webkit-animation: rotation 200ms linear infinite;
+          animation: rotation 200ms linear infinite;
+}
+.loading-screen__title::after {
+  content: "";
+  position: absolute;
+  top: -4.5rem;
+  left: calc(50% - 2rem);
+  background-color: #323232;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
 }
 
 .recherche {

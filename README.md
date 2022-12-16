@@ -4,7 +4,7 @@
   <table>
 	<tr>
 	   <td width="50%">
-	   <h2>Ohmyfood_L3 version_1</h2>
+	   <h2>Ohmyfood_L3</h2>
      <p>Livrable 3 : Compétences évaluées</hp>
      
 * [Utiliser un système de gestion de versions pour le suivi du projet et son hébergement](https://franckdun.github.io/Ohmyfood_L3/index.html)
